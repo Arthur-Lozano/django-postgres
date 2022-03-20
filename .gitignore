@@ -118,5 +118,6 @@ venv.bak/
 node_modules/
 .next/
 
+
 # poetry
 poetry.lock
