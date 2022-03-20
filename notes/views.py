@@ -4,9 +4,9 @@ from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 class NoteListView(ListView):
-    template_name = 'track-list.html'
+    template_name = 'note-list.html'
     model = Note
-    context_object_name = 'list_note'
+    context_object_name = 'note_list'
 
 class NoteDetailView(DetailView):
     template_name = 'note-detail.html'
