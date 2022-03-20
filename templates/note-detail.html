@@ -6,8 +6,8 @@
   <h2>{{ note.title }}</h2>
   <h3>{{ note.category }}</h3>
   <p class="my-4">{{ note.description }}</p>
-  <a class="btn btn-primary my-3" href="{% url 'note_update' note.pk %}">Update Entry</a>
-  <a class="btn btn-danger" href="{% url 'note_delete' note.pk %}">Delete Entry</a>
+  <a href="{% url 'note_update' note.pk %}">Update Entry</a>
+  <a href="{% url 'note_delete' note.pk %}">Delete Entry</a>
 </div>
 
 {% endblock content %}
